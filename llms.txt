@@ -1,0 +1,6 @@
+# LLMs and AI training policy for this repository
+
+This repository is NOT available for AI/ML model training.
+
+See TRAINING.md for the full policy statement.
+Contact: https://cenius.ai/contact

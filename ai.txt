@@ -1,0 +1,11 @@
+# AI crawlers policy
+
+noindex: true
+no-training: true
+
+This repository's content may not be used to train, fine-tune or otherwise
+develop AI or machine learning models without explicit written permission
+from Cenius AI.
+
+See TRAINING.md and ROBOTS.TXT for details.
+Contact: https://cenius.ai/contact
