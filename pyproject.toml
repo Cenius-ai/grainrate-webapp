@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grainrate"
+version = "1.0.0"
+description = "Compare stored grain moisture against safe-storage limits, flag bins at risk, and log daily silo temperatures."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business :: Agriculture",
+]
+
+[project.scripts]
+grainrate = "grainrate:main"
+
+[tool.setuptools]
+py-modules = ["grainrate"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+# Silences a deprecation warning when the optional pytest-asyncio plugin happens
+# to be installed in the environment; plain pytest ignores this key.
+asyncio_default_fixture_loop_scope = "function"

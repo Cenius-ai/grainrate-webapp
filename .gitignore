@@ -1,0 +1,31 @@
+# GrainRate ignores local data and build output - none of it belongs in git.
+
+# local stores created while testing or demoing
+.grainrate/
+.grainrate-data/
+demo-data/
+*.tmp
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# test / tool caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# environment files (the real values stay local; .env.example is committed)
+.env
+.env.*
+!.env.example
+
+# editors / OS
+.DS_Store
+.idea/
+.vscode/

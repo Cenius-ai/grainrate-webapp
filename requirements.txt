@@ -1,0 +1,3 @@
+# Runtime dependencies: none. GrainRate is standard library only (Python 3.9+).
+# The single entry below is the test harness, used only by `pytest`.
+pytest==8.3.3
